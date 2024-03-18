@@ -76,6 +76,7 @@ main {
     overflow: hidden;
     height: 40rem;
     width: 80rem;
+    border-radius: 2rem;
 }
 .slides {
     width: 400%;
