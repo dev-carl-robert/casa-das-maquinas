@@ -13,18 +13,49 @@ body{
     flex-direction: column;
     background-color: #FFE5E1;
 }
-
-header {
-    height: 13rem;
-    color: #F9F9F1;
-    display: flex;
-    justify-content: space-between;
+    header {
+        height: 13rem;
+        color: #F9F9F1;
+        display: flex;
+        justify-content: space-between;
     align-items: center;
     background-color: #E11F2A;
-    box-shadow: #E21F2A 0px 0px 9px 20px;
-    z-index: 2;    
     font-size: 1rem;
 }
+.contatos {
+    background-color: black;
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.redes-link {
+    display: flex;
+    gap: 1rem;
+}
+.redes-link i{
+    font-size: 1.2rem;
+    background-color: #F9C805;
+    border-radius: 10rem;
+    color: black;
+    padding: 10px;
+}
+.visao{
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+}
+.visao i{
+    font-size: 1.4rem;
+}
+.visao__container{
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+
 .logo {
     max-width: 20rem;
     max-height: 20rem;
@@ -41,6 +72,7 @@ header {
     align-items: center;
 }
 .social {
+    display: flex;
     letter-spacing: 2px;
     display: flex;
     gap: 2rem;
@@ -99,7 +131,7 @@ main {
     width: 80rem;
     margin-top: -10rem;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 .manual-btn {
     border: 2px solid #B81722;
@@ -139,7 +171,7 @@ main {
     width: 80rem;
     margin-top: 30rem;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 .navigation-auto div:not(:last-child){
     margin-right: 4rem;
@@ -158,6 +190,7 @@ main {
 }
 
 .hero {
+    margin: 10rem 0;
     display: flex;
     gap: 8rem;
     justify-content: center;
