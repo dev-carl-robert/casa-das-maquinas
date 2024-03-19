@@ -14,12 +14,12 @@ body{
     background-color: #FFE5E1;
 }
     header {
-        height: 13rem;
+        height: 9rem;
         color: #F9F9F1;
         display: flex;
         justify-content: space-between;
     align-items: center;
-    background-color: #E11F2A;
+    background-color: red;
     font-size: 1rem;
 }
 .contatos {
@@ -57,7 +57,7 @@ body{
 }
 
 .logo {
-    max-width: 20rem;
+    max-width: 12rem;
     max-height: 20rem;
 }
 .logo img{
@@ -92,7 +92,7 @@ body{
     gap: 1rem;
     background-color: #1C2A5F;
     padding: 1rem 3rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
     color: #d7d7d7;
     font-size: 1.4rem;
 }
@@ -188,7 +188,6 @@ main {
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #FF6F61;
 }
-
 .hero {
     margin: 10rem 0;
     display: flex;
@@ -196,6 +195,7 @@ main {
     justify-content: center;
     width: 100vw;
     position: relative;
+    background-color: red;
 }
 .hero_image{
     max-width: 50vw;
@@ -206,38 +206,50 @@ main {
     align-items: center;
 }
 .hero_image img{
-    width: 45rem;
+    padding-top: 40px;
+    width: 35rem;
     margin-bottom: 4rem;
     height: 100%;
 }
-.quadrado{
-    position: absolute;
-    width: 45rem;
-    height: 38.2rem;
-    background-color: #1C2A5F;
-    z-index: -1;    
-    right: 72rem;
-    top: 3rem;
-}
 .hero_apresentation {
-    max-width: 50vw;
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #B81722;
+    color: #fec700;
 }
 
 .apresentation {
     font-family: 'Enriqueta';
-    width: 50rem;
+    width: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: justify;
 }
 .apresentation h1{
     text-transform: uppercase;
 }
 .apresentation h2{
     font-size: 1.8rem;
-    color: #1C2A5F;
+    color: #ffffff;
+}
+.row{
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+}
+.row img{
+max-width: 15%;
+max-height: 15%;
+}
+.rodape{
+    background-color: red;
+}
+.rodape h1{
+    text-align: center;
+    color: #F9C805;
+}
+.rodape h2{
+    text-align: center;
+    color: #ffffff;
 }
