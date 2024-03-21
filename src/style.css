@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     font-size: 62.5%;
 }
@@ -15,7 +19,7 @@ body{
 }
     header {
         height: 9rem;
-        color: #F9F9F1;
+        color: white;
         display: flex;
         justify-content: space-between;
     align-items: center;
@@ -65,7 +69,7 @@ body{
     height: 100%;
 }
 .links {
-    color: #F9FDFE;
+    color: white;
     display: flex;
     width: 50rem;
     justify-content: space-around;
@@ -80,10 +84,10 @@ body{
 .whats {
     display: flex;
     gap: 1rem;
-    background-color: #3A7B29;
+    background-color: #4ebd33;
     padding: 1rem 3rem;
     border-radius: 3rem;
-    color: #d7d7d7;
+    color: white;
     font-size: 1.4rem;
     overflow: hidden;
 }
@@ -101,92 +105,83 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
 }
-.slider {
+.slider{
     margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 in;
     overflow: hidden;
-    height: 40rem;
-    width: 80rem;
-    border-radius: 2rem;
 }
-.slides {
+.slider-content{
     width: 400%;
-    height: 400px;
+    height: auto;
     display: flex;
 }
-.slides input{
+.slider-content input, .img-mobile{
     display: none;
 }
-.slide {
-    position: relative;
+.slide-box{
     width: 25%;
-    transition: 2s;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
 }
-.slide {
-    width: 80rem;
+.slide-box img{
+    width: 100%;
 }
-.manual-navigation {
+.navigation-manual, .navigation-auto{
     position: absolute;
-    width: 80rem;
-    margin-top: -10rem;
+    width: 100%;
+    margin-top: 1%;
     display: flex;
     justify-content: center;
 }
-.manual-btn {
-    border: 2px solid #B81722;
-    padding: 5px;
-    border-radius: 10px;
+.navigation-manual .manual-btn, .navigation-auto div {
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.2s;
 }
-.manual-btn:not(:last-child){
-    margin-right: 4rem;
+.navigation-manual .manual-btn:not(:last-child), .navigation-auto div:not(:last-child){
+    margin-right: 10px;
 }
-.manual-btn:hover{
-    background-color: #FF6F61;
-}
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~.first{
-    margin-left: -25%;
-}
-#radio3:checked ~.first{
-    margin-left: -50%;
-}
-#radio4:checked ~.first{
-    margin-left: -75%;
-}
-.navigation-auto div{
-    border: 2px solid #FF6F61;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 1rem;
-    transition: 1s;
-}
-
-.navigation-auto {
-    position: absolute;
-    width: 80rem;
-    margin-top: 30rem;
-    display: flex;
-    justify-content: center;
-}
-.navigation-auto div:not(:last-child){
-    margin-right: 4rem;
+.navigation-manual .manual-btn:hover{
+    background-color: red;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #FF6F61;
+    background-color: red;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #FF6F61;
+    background-color: red;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #FF6F61;
+    background-color: red;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #FF6F61;
+    background-color: red;
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
+}
+@media screen and (max-width: 900px){
+    .img-mobile{
+        display: none;
+    }
+    .navigation-auto, .navigation-manual{
+        margin-top: 60%;
+    }
 }
 .hero {
     margin: 10rem 0;
@@ -234,6 +229,7 @@ main {
     color: #ffffff;
 }
 .row{
+    margin-top: 8rem;
     justify-content: center;
     display: flex;
     gap: 2rem;
@@ -252,4 +248,45 @@ max-height: 15%;
 .rodape h2{
     text-align: center;
     color: #ffffff;
+}
+.catalogo{
+    display: flex;
+    padding: 32px;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #F9C805;
+    width: 180px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #8d8d8daa;
+    
+}
+.card img {
+    
+    width: 80%;
+    height: 60%;
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+.card h1{
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.card button{
+    background-color: red;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+
 }

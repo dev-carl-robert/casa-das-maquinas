@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/script.js" defer></script>
     <title>Casa das Máquina</title>
 
     <link rel="stylesheet" href="./src/style.css">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 
@@ -64,24 +66,28 @@
     </header>
 
     <main>
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+        <section class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
 
-                <div class="slide first">
-                    <img src="./src/images/1.png" alt="imagem 1">
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="./src/images/Banner/1.png" alt="imagem 1">
+                    <img class="img-mobile" src="./src/images/Banner/banner-mobile/1.png" alt="imagem 1">
                 </div>
-                <div class="slide ">
-                    <img src="./src/images/2.png" alt="imagem 2">
+                <div class="slide-box">
+                    <img class="img-desktop" src="./src/images/Banner/2.png" alt="imagem 2">
+                    <img class="img-mobile" src="./src/images/Banner/banner-mobile/2.png" alt="imagem 2">
                 </div>
-                <div class="slide ">
-                    <img src="./src/images/3.png" alt="imagem 3">
+                <div class="slide-box ">
+                    <img class="img-desktop" src="./src/images/Banner/3.png" alt="imagem 3">
+                    <img class="img-mobile" src="./src/images/Banner/banner-mobile/3.png" alt="imagem 3">
                 </div>
-                <div class="slide ">
-                    <img src="./src/images/4.png" alt="imagem 4">
+                <div class="slide-box ">
+                    <img class="img-desktop" src="./src/images/Banner/4.png" alt="imagem 4">
+                    <img class="img-mobile" src="./src/images/Banner/banner-mobile/4.png" alt="imagem 4">
                 </div>
                 <div class="navigation-auto">
                     <div class="auto-btn1"></div>
@@ -91,13 +97,13 @@
                 </div>
             </div>
 
-            <div class="manual-navigation">
+            <div class="navigation-manual">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
                 <label for="radio4" class="manual-btn"></label>
             </div>
-        </div>
+        </section>
             <div class="row">
                     <img src="./src/images/Figure → adriano-eletricista-lp.webp.png">
                     <img src="./src/images/Figure → eletricista-industrial.webp.png" alt="image2">
@@ -116,28 +122,87 @@
                 </div>
             </div>
         </div>
-        <div class="produtos">
-        <img src="./src/images/Produtos/2111242475_1.png-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/D_NQ_NP_704946-MLB31462017972_072019-O.png-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/D_NQ_NP_763035-MLB49532402214_032022-O.png-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/D_NQ_NP_797767-MLB51799684439_102022-O.png-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/D_NQ_NP_845748-MLB50482992739_062022-O.png-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/D_NQ_NP_976131-MLB53735403402_022023-O.png-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/Imagem_do_WhatsApp_de_2024-03-14_à_s__16.44.53_1d3974c2.png-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/Imagem_do_WhatsApp_de_2024-03-14_à_s__16.44.53_834b3391.png-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/Imagem_do_WhatsApp_de_2024-03-14_à_s__16.50.24_5441e79a-removebg-preview.png" alt="">
-        <img src="./src/images/Produtos/jogo_aneis_82mm_para_motogeradror_mg5000l_mt_b4t_11_hp_branco_90300936_4861_3_910d47e2d6ce1fcfed6922-removebg-preview.png" alt="">
-        </div>
+        <section class="catalogo">
+            <div class="card">
+                <img src="./src/images/Produtos/2111242475_1.png-removebg-preview.png" alt="">
+                <div>
+                    <h1>Bobina De Ignição Motor Briggs & Stratton</h1>
+                    <button>Saiba mais</button>
+                </div>
+                
+            </div> 
+            <div class="card">
+                <img src="./src/images/Produtos/D_NQ_NP_704946-MLB31462017972_072019-O.png-removebg-preview.png" alt="">
+                <div>
+                    <h1>Elemento Filtro De Ar</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div>   
+            <div class="card">             
+                <img src="./src/images/Produtos/D_NQ_NP_763035-MLB49532402214_032022-O.png-removebg-preview.png" alt="">
+                <div>
+                    <h1>Punho Arranque Para Motor</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div>  
+            <div class="card">              
+                <img src="./src/images/Produtos/D_NQ_NP_797767-MLB51799684439_102022-O.png-removebg-preview.png" alt="">
+                <div>
+                    <h1>Branco Tampa Tanque Combustível</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div>      
+            <div class="card">          
+                <img src="./src/images/Produtos/D_NQ_NP_845748-MLB50482992739_062022-O.png-removebg-preview.png" alt="">
+                <div>
+                    <h1>Kit Cilindro Pistão Anéis</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div>   
+            <div class="card">             
+                <img src="./src/images/Produtos/D_NQ_NP_976131-MLB53735403402_022023-O.png-removebg-preview.png" alt="">
+                <div>
+                    <h1>Partida Retrátil Motor</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/images/Produtos/Imagem_do_WhatsApp_de_2024-03-14_à_s__16.44.53_1d3974c2.png-removebg-preview.png" alt="">
+                <div>
+                    <h1>Titulo1</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/images/Produtos/Imagem_do_WhatsApp_de_2024-03-14_à_s__16.44.53_834b3391.png-removebg-preview.png" alt="">
+                <div>
+                    <h1>Titulo1</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+            <div class="card">              
+                <img src="./src/images/Produtos/Imagem_do_WhatsApp_de_2024-03-14_à_s__16.50.24_5441e79a-removebg-preview.png" alt="">
+                <div>
+                    <h1>Filtro Ar Motor</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div> 
+            <div class="card">               
+                <img src="./src/images/Produtos/jogo_aneis_82mm_para_motogeradror_mg5000l_mt_b4t_11_hp_branco_90300936_4861_3_910d47e2d6ce1fcfed6922-removebg-preview.png" alt="">
+                <div>
+                    <h1>Jogo Aneis</h1>
+                    <button>Saiba mais</button>
+                </div>
+            </div>   
+        </section>
     </main>
   <footer>
     <div class="rodape">
-        <div class="apresentation-footer">
+        <section class="apresentation-footer">
             <h1>Solucionamos problema em manutenção<p>da branco</p></h1>
             <h2>Os melhores eletricistas de São Luís</h2>
-        </div>
+        </section>
     </div>
   </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./src/script.js"></script>
 </html>
