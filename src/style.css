@@ -102,6 +102,7 @@ header {
     letter-spacing: 2px;
     display: flex;
     gap: 2rem;
+    font-family: "roboto";
 }
 
 .whats {
