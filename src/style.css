@@ -202,7 +202,7 @@ main {
 }
 .hero_image img{
     padding-top: 40px;
-    width: 35rem;
+    width: 50rem;
     margin-bottom: 4rem;
     height: 100%;
 }
@@ -222,7 +222,9 @@ main {
     text-align: justify;
 }
 .apresentation h1{
+    color: white;
     text-transform: uppercase;
+    font-size: 30px;
 }
 .apresentation h2{
     font-size: 1.8rem;
@@ -238,17 +240,6 @@ main {
 max-width: 15%;
 max-height: 15%;
 }
-.rodape{
-    background-color: red;
-}
-.rodape h1{
-    text-align: center;
-    color: #F9C805;
-}
-.rodape h2{
-    text-align: center;
-    color: #ffffff;
-}   
 .catalogo{
    width: 1250px;
    overflow: hidden;
@@ -278,6 +269,7 @@ max-height: 15%;
     flex-wrap: wrap;
     font-family: sans-serif;
     justify-content: center;
+    font-size: 15px;
 
 }
 .catalogo .product .information button{
@@ -307,4 +299,82 @@ max-height: 15%;
     background-color: white;
     margin: 0 20px;  
     cursor: pointer; 
+}
+.rodape{
+    background-color: red;
+}
+.rodape h1{
+    text-align: center;
+    color: white;
+}
+.rodape h2{
+    text-align: center;
+    color: #ffffff;
+}   
+footer {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5%;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.apresentation-footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.apresentation-footer h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.apresentation-footer h2 {
+    margin-top: 5px;
+    font-size: 18px;
+    color: white;
+    padding-top: 1%;
+}
+
+.redes-socias-footer img {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li p {
+    margin: 10px;
+}
+
+ul {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul {
+        width: 100%;
+        text-align: center;
+    }
 }
