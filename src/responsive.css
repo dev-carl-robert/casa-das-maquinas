@@ -1,0 +1,8 @@
+@media screen and (max-width: 900px){
+    .img-mobile{
+        display: none;
+    }
+    .navigation-auto, .navigation-manual{
+        margin-top: 60%;
+    }
+}

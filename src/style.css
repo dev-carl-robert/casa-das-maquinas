@@ -2,31 +2,45 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     font-size: 62.5%;
 }
-@font-face {
-    font-family: 'Asbigan';
-    src: url(../fonts/asbigan-4bvvb.ttf);
+
+::-webkit-scrollbar {
+    width: 1.7rem;
 }
 
-body{ 
-    font-family: 'Roboto';
+::-webkit-scrollbar-track {
+    border-radius: 2.5rem;
+    background-color: #ffe5e1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2.5rem;
+    background-color: #E11F2A;
+}
+
+body {
+    font-family: "Enriqueta";
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    background-color: #FFE5E1;
+    background-color: #ffe5e1;
 }
-    header {
-        height: 9rem;
-        color: white;
-        display: flex;
-        justify-content: space-between;
+
+header {
+    height: 9rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: #E11F2A;
     font-size: 1rem;
 }
+
 .contatos {
+    overflow-x: hidden;
     background-color: black;
     height: 5rem;
     width: 100vw;
@@ -35,26 +49,31 @@ body{
     align-items: center;
     gap: 2.5rem;
 }
+
 .redes-link {
     display: flex;
     gap: 1rem;
 }
-.redes-link i{
+
+.redes-link i {
     font-size: 1.2rem;
-    background-color: #F9C805;
+    background-color: #f9c805;
     border-radius: 10rem;
     color: black;
     padding: 10px;
 }
-.visao{
+
+.visao {
     display: flex;
     gap: 2rem;
     font-size: 1rem;
 }
-.visao i{
+
+.visao i {
     font-size: 1.4rem;
 }
-.visao__container{
+
+.visao__container {
     display: flex;
     gap: 1rem;
     color: white;
@@ -64,10 +83,12 @@ body{
     max-width: 12rem;
     max-height: 20rem;
 }
-.logo img{
+
+.logo img {
     width: 100%;
     height: 100%;
 }
+
 .links {
     color: white;
     display: flex;
@@ -75,12 +96,14 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
 .social {
     display: flex;
     letter-spacing: 2px;
     display: flex;
     gap: 2rem;
 }
+
 .whats {
     display: flex;
     gap: 1rem;
@@ -91,98 +114,55 @@ body{
     font-size: 1.4rem;
     overflow: hidden;
 }
-.tel{
+
+.tel {
     display: flex;
     gap: 1rem;
-    background-color: #1C2A5F;
+    background-color: #1c2a5f;
     padding: 1rem 3rem;
     border-radius: 2rem;
     color: #d7d7d7;
     font-size: 1.4rem;
+    margin-right: 2rem;
 }
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.slider{
+
+.slider {
     margin: 0 auto;
     width: 100%;
-    height: auto;
-    padding: 0 in;
+    height: 46.5rem;
     overflow: hidden;
 }
-.slider-content{
-    width: 400%;
+
+.slider-content {
+    width: 100vw;
     height: auto;
     display: flex;
 }
-.slider-content input, .img-mobile{
+
+.slider-content input,
+.img-mobile {
     display: none;
 }
-.slide-box{
+
+.slide-box {
     width: 25%;
-    height: auto;
+    height: 50rem;
     position: relative;
     text-align: center;
     transition: 1s;
 }
-.slide-box img{
+
+.slide {
     width: 100%;
 }
-.navigation-manual, .navigation-auto{
-    position: absolute;
-    width: 100%;
-    margin-top: 1%;
-    display: flex;
-    justify-content: center;
-}
-.navigation-manual .manual-btn, .navigation-auto div {
-    border: 1px solid red;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-}
-.navigation-manual .manual-btn:not(:last-child), .navigation-auto div:not(:last-child){
-    margin-right: 10px;
-}
-.navigation-manual .manual-btn:hover{
-    background-color: red;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: red;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: red;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: red;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: red;
-}
-#radio1:checked ~ .primeiro{
-    margin-left: 0%;
-}
-#radio2:checked ~ .primeiro{
-    margin-left: -25%;
-}
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
-}
-#radio4:checked ~ .primeiro{
-    margin-left: -75%;
-}
-@media screen and (max-width: 900px){
-    .img-mobile{
-        display: none;
-    }
-    .navigation-auto, .navigation-manual{
-        margin-top: 60%;
-    }
-}
+
 .hero {
     margin: 10rem 0;
     display: flex;
@@ -190,22 +170,25 @@ main {
     justify-content: center;
     width: 100vw;
     position: relative;
-    background-color: red;
+    background-color: #E11F2A;
 }
-.hero_image{
+
+.hero_image {
     max-width: 50vw;
     max-height: 40rem;
-    overflow: hidden; 
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hero_image img{
+
+.hero_image img {
     padding-top: 40px;
     width: 50rem;
     margin-bottom: 4rem;
     height: 100%;
 }
+
 .hero_apresentation {
     display: flex;
     justify-content: center;
@@ -214,68 +197,75 @@ main {
 }
 
 .apresentation {
-    font-family: 'Enriqueta';
+    font-family: "Enriqueta";
     width: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: justify;
 }
-.apresentation h1{
+
+.apresentation h1 {
     color: white;
     text-transform: uppercase;
     font-size: 30px;
 }
-.apresentation h2{
+
+.apresentation h2 {
     font-size: 1.8rem;
     color: #ffffff;
 }
-.row{
+
+.row {
     margin-top: 8rem;
     justify-content: center;
     display: flex;
     gap: 2rem;
 }
-.row img{
-max-width: 15%;
-max-height: 15%;
+
+.row img {
+    max-width: 15%;
+    max-height: 15%;
 }
-.catalogo{
-   width: 1250px;
-   overflow: hidden;
-   display: flex;
-   padding: 30px 10px;
-   position: relative;
-   justify-content: center;
+
+.catalogo {
+    width: 1250px;
+    overflow: hidden;
+    display: flex;
+    padding: 30px 10px;
+    position: relative;
+    justify-content: center;
 }
+
 .catalogo .product {
     height: 500px;
     width: 400px;
-    box-shadow: 0 0 20px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-right: 40px;
     transition: 0.5s;
-    
 }
-.catalogo .product img{
+
+.catalogo .product img {
     width: 400px;
     height: 400px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
-.catalogo .product .information{
+
+.catalogo .product .information {
     padding: 20px 30px;
     display: flex;
     flex-wrap: wrap;
     font-family: sans-serif;
     justify-content: center;
     font-size: 15px;
-
 }
-.catalogo .product .information button{
+
+.catalogo .product .information button {
     margin-top: 15px;
     width: 100%;
-    background: red;
+    background: #E11F2A;
     border: none;
     outline: none;
     color: white;
@@ -283,42 +273,48 @@ max-height: 15%;
     cursor: pointer;
     border-radius: 5px;
 }
-.catalogo .arrasta{
+
+.catalogo .arrasta {
     width: 1250px;
     position: absolute;
     display: flex;
     justify-content: space-between;
     top: 40%;
 }
-.catalogo .arrasta .left, .right {
+
+.catalogo .arrasta .left,
+.right {
     font-size: 20px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 1px solid gray;
     background-color: white;
-    margin: 0 20px;  
-    cursor: pointer; 
+    margin: 0 20px;
+    cursor: pointer;
 }
-.rodape{
-    background-color: red;
-}
-.rodape h1{
+
+.rodape h1 {
     text-align: center;
     color: white;
 }
-.rodape h2{
+
+.rodape h2 {
     text-align: center;
     color: #ffffff;
-}   
+}
+
 footer {
-    background-color: rgb(255, 0, 0);
+    background-color: #E11F2A;
     color: #fff;
     padding: 10px 0;
 }
-
+footer h1,h2,p{
+    font-size: 1.3rem;
+}
 .container-footer {
     display: flex;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 5%;
@@ -326,6 +322,7 @@ footer {
 }
 
 ul {
+    text-align: center;
     list-style-type: none;
     padding: 0;
 }
@@ -345,12 +342,29 @@ ul {
     font-size: 18px;
     color: white;
     padding-top: 1%;
+    
+}
+.texto__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contatos__footer{
+    display: flex;
+    flex-direction: column;
 }
 
+.numero{
+    font-family: 'roboto';
+}
+.container-footer li  p {
+    min-width: 4rem;
+}
 .redes-socias-footer img {
     width: 30px;
     height: auto;
-    margin: 0 5px;
+    margin: 0 1rem;
+    
 }
 
 ul li a {
@@ -372,7 +386,7 @@ ul {
         flex-direction: column;
         align-items: center;
     }
-    
+
     ul {
         width: 100%;
         text-align: center;
