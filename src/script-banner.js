@@ -13,9 +13,3 @@ function nextImage() {
 
     document.getElementById("radio" + count).checked = true;
 }
-
-const progressContent = document.querySelector(".autoplay-progress span");
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  slidesPerView: 3,
-  centeredSlides: true
