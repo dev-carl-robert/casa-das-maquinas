@@ -164,6 +164,38 @@ main {
     width: 100%;
 }
 
+.manual-navigation {
+    position: absolute;
+    width: 80rem;
+    margin-top: -10rem;
+    display: flex;
+    justify-content: right;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -100%;
+}
+
+#radio3:checked~.first {
+    margin-left: -200%;
+}
+
+#radio4:checked~.first {
+    margin-left: -300%;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 80rem;
+    margin-top: 30rem;
+    display: flex;
+    justify-content: right;
+}
+
 .hero {
     margin: 10rem 0;
     display: flex;
@@ -230,7 +262,7 @@ main {
 }
 
 .catalogo {
-    width: 1250px;
+    width: 100vw;
     overflow: hidden;
     display: flex;
     padding: 30px 10px;
@@ -240,16 +272,16 @@ main {
 
 .catalogo .product {
     height: 500px;
-    width: 400px;
+    width: 300px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-right: 40px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .catalogo .product img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
@@ -275,24 +307,22 @@ main {
     border-radius: 5px;
 }
 
-.catalogo .arrasta {
-    width: 1250px;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 40%;
+.swiper {
+    width: 100%;
+    height: 100%;
 }
 
-.catalogo .arrasta .left,
-.right {
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid gray;
-    background-color: white;
-    margin: 0 20px;
-    cursor: pointer;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .rodape h1 {
@@ -310,9 +340,13 @@ footer {
     color: #fff;
     padding: 10px 0;
 }
-footer h1,h2,p{
+
+footer h1,
+h2,
+p {
     font-size: 1.3rem;
 }
+
 .container-footer {
     display: flex;
     gap: 1rem;
@@ -343,29 +377,33 @@ ul {
     font-size: 18px;
     color: white;
     padding-top: 1%;
-    
+
 }
-.texto__footer{
+
+.texto__footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.contatos__footer{
+
+.contatos__footer {
     display: flex;
     flex-direction: column;
 }
 
-.numero{
+.numero {
     font-family: 'roboto';
 }
-.container-footer li  p {
+
+.container-footer li p {
     min-width: 4rem;
 }
+
 .redes-socias-footer img {
     width: 30px;
     height: auto;
     margin: 0 1rem;
-    
+
 }
 
 ul li a {
