@@ -7,9 +7,8 @@
     <script src="./src/script-banner.js" defer></script>
     <title>Casa das Máquina</title>
 
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/responsive.css">
     <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +16,10 @@
         href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/responsive.css">
 </head>
 
 <body>
@@ -127,133 +126,165 @@
             </div>
         </div>
         <section class="catalogo">
-            <div class="swiper mySwiper produto">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slider product">
-                        <div class="image">
-                            <img src="./src/images/Produtos/2111242475_1.png-removebg-preview.png" alt="">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/1.png" alt="">
+                            </div>
+                            <div class="information">
+
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
+
                         </div>
-                        <div class="information">
+                    </li>
 
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
-
-                            <button>Saiba Mais</button>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slider product">
-                        <div class="image">
-                            <img src="./src/images/Produtos/D_NQ_NP_704946-MLB31462017972_072019-O.png-removebg-preview.png"
-                                alt="">
-                        </div>
-                        <div class="information">
-
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
-
-                            <button>Saiba Mais</button>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slider product">
-                        <div class="image">
-                            <img src="./src/images/Produtos/D_NQ_NP_763035-MLB49532402214_032022-O.png-removebg-preview.png"
-                                alt="">
-                        </div>
-                        <div class="information">
-
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
-
-                            <button>Saiba Mais</button>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slider product">
-                        <div class="image">
-                            <img src="./src/images/Produtos/D_NQ_NP_797767-MLB51799684439_102022-O.png-removebg-preview.png"
-                                alt="">
-                        </div>
-                        <div class="information">
-
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
-
-                            <button>Saiba Mais</button>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slider product">
-                        <div class="image">
-                            <img src="./src/images/Produtos/D_NQ_NP_845748-MLB50482992739_062022-O.png-removebg-preview.png"
-                                alt="">
-                        </div>
-                        <div class="information">
-
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
-
-                            <button>Saiba Mais</button>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slider product">
-                        <div class="image">
-                            <img src="./src/images/Produtos/D_NQ_NP_976131-MLB53735403402_022023-O.png-removebg-preview.png"
-                                alt="">
-                        </div>
-                        <div class="information">
-
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
-
-                            <button>Saiba Mais</button>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slider product">
-                        <div class="image">
-                            <img src="./src/images/Produtos/Imagem_do_WhatsApp_de_2024-03-14_à_s__16.44.53_834b3391.png-removebg-preview.png"
-                                alt="">
-                        </div>
-                        <div class="information">
-
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
-
-                            <button>Saiba Mais</button>
-                        </div>
-
-                        <div class="swiper-slider product">
-                            <div class="image">
-                                <img src="./src/images/Produtos/Imagem_do_WhatsApp_de_2024-03-14_à_s__16.50.24_5441e79a-removebg-preview.png"
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/2.png"
                                     alt="">
                             </div>
+                            <div class="information">
+
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
+
                         </div>
-                        <div class="information">
+                    </li>
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/3.png"
+                                    alt="">
+                            </div>
+                            <div class="information">
 
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
 
-                            <button>Saiba Mais</button>
+                                <button>Saiba Mais</button>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/4.png"
+                                    alt="">
+                            </div>
+                            <div class="information">
+
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/5.png"
+                                    alt="">
+                            </div>
+                            <div class="information">
+
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/6.png"
+                                    alt="">
+                            </div>
+                            <div class="information">
+
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
+
                         </div>
 
-                    </div>
-                    <div class="swiper-slider product">
-                        <div class="image">
-                            <img src="./src/images/Produtos/jogo_aneis_82mm_para_motogeradror_mg5000l_mt_b4t_11_hp_branco_90300936_4861_3_910d47e2d6ce1fcfed6922-removebg-preview.png"
-                                alt="">
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/7.png"
+                                    alt="">
+                            </div>
+                            <div class="information">
+
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
                         </div>
-                        <div class="information">
+                    </li>
 
-                            <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/8.png"
+                                    alt="">
+                            </div>
+                            <div class="information">
 
-                            <button>Saiba Mais</button>
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
+
                         </div>
 
-                    </div>
+                    </li>
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/9.png"
+                                    alt="">
+                            </div>
+                            <div class="information">
 
-                </div>
-                <div class="swiper-button-next swiper-navBtn"></div>
-                <div class="swiper-button-prev swiper-navBtn"></div>
-                <div class="swiper-pagination"></div>
-                <div class="autoplay-progress">
-                    <span></span>
-                </div>
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="card">
+                        <div class="product">
+                            <div class="image" draggable="false">
+                                <img src="./src/images/Produtos/10.png"
+                                    alt="">
+                            </div>
+                            <div class="information">
+
+                                <div class="title">Bobina De Ignição Motor Briggs & Stratton</div>
+
+                                <button>Saiba Mais</button>
+                            </div>
+
+                        </div>
+
+                    </li>
+                </ul>
             </div>
+
         </section>
 
     </main>
@@ -308,8 +339,6 @@
         </div>
     </footer>
     <script src="./src/script-banner.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 </body>
 
 </html>

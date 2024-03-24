@@ -2,7 +2,13 @@
     .img-mobile{
         display: none;
     }
-    .navigation-auto, .navigation-manual{
-        margin-top: 60%;
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper .carousel{
+        grid-auto-columns: 100%;
     }
 }
