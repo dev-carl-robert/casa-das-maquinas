@@ -216,10 +216,10 @@ main {
 }
 
 .hero_image img {
-    padding-top: 40px;
-    width: 50rem;
+    padding-top: 10px;  
+    width: 60rem;
     margin-bottom: 4rem;
-    height: 100%;
+    height: 110%;
 }
 
 .hero_apresentation {
@@ -245,7 +245,7 @@ main {
 }
 
 .apresentation h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #ffffff;
 }
 
@@ -253,12 +253,11 @@ main {
     margin-top: 8rem;
     justify-content: center;
     display: flex;
-    gap: 2rem;
 }
 
 .row img {
-    max-width: 15%;
-    max-height: 15%;
+    width: 50%;
+    height: 20%;
 }
 
 .wrapper {
@@ -425,11 +424,17 @@ ul {
     min-width: 4rem;
 }
 
-.redes-socias-footer img {
-    width: 30px;
-    height: auto;
-    margin: 0 1rem;
+.redes-socias-footer {
+    display: flex;
+    gap: 1rem;
+}
 
+.redes-socias-footer i {
+    font-size: 1.2rem;
+    background-color: #f9c805;
+    border-radius: 10rem;
+    color: black;
+    padding: 10px;
 }
 
 ul li a {
